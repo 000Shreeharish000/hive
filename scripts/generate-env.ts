@@ -8,14 +8,6 @@
  * Usage: npx tsx scripts/generate-env.ts
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { parse } from 'yaml';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const PROJECT_ROOT = join(__dirname, '..');
-
   };
   timescaledb: {
     url: string;
