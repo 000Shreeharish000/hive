@@ -158,23 +158,7 @@ function main() {
 
   const config = loadConfig();
 
-  // Generate root .env (for docker-compose)
-  const rootEnvPath = join(PROJECT_ROOT, '.env');
-  writeFileSync(rootEnvPath, generateRootEnv(config));
-  console.log(`✓ Generated ${rootEnvPath}`);
 
-  // Generate frontend .env
-  const frontendEnvPath = join(PROJECT_ROOT, 'honeycomb', '.env');
-  writeFileSync(frontendEnvPath, generateFrontendEnv(config));
-  console.log(`✓ Generated ${frontendEnvPath}`);
-
-  // Generate backend .env
-  const backendEnvPath = join(PROJECT_ROOT, 'hive', '.env');
-  writeFileSync(backendEnvPath, generateBackendEnv(config));
-  console.log(`✓ Generated ${backendEnvPath}`);
-
-  console.log('\nDone! Environment files have been generated.');
-  console.log('\nNote: These files are git-ignored. Regenerate after editing config.yaml.');
 }
 
 main();
