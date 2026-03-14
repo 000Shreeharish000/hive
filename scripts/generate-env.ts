@@ -16,12 +16,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 
-interface Config {
-  app: {
-    name: string;
-    environment: string;
-    log_level: string;
-  };
+
   server: {
     frontend: {
       port: number;
