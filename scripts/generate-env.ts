@@ -16,12 +16,6 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 
-
-  server: {
-    frontend: {
-      port: number;
-    };
-
   };
   timescaledb: {
     url: string;
