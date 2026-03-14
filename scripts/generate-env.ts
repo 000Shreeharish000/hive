@@ -26,10 +26,7 @@ interface Config {
     frontend: {
       port: number;
     };
-    backend: {
-      port: number;
-      host: string;
-    };
+
   };
   timescaledb: {
     url: string;
