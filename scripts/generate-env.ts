@@ -1,46 +1,4 @@
-/**
- * Environment Generator Script
- *
- * Reads config.yaml and generates .env files for each service.
- * This provides a single source of truth for configuration while
- * maintaining compatibility with standard .env file workflows.
- *
- * Usage: npx tsx scripts/generate-env.ts
- */
 
-  };
-  timescaledb: {
-    url: string;
-    port: number;
-  };
-  mongodb: {
-    url: string;
-    database: string;
-    erp_database: string;
-    port: number;
-  };
-  redis: {
-    url: string;
-    port: number;
-  };
-  auth: {
-    jwt_secret: string;
-    jwt_expires_in: string;
-    passphrase: string;
-  };
-  npm: {
-    token: string;
-  };
-  cors: {
-    origin: string;
-  };
-  features: {
-    registration: boolean;
-    rate_limiting: boolean;
-    request_logging: boolean;
-    mcp_server: boolean;
-  };
-}
 
 function loadConfig(): Config {
   const configPath = join(PROJECT_ROOT, 'config.yaml');
