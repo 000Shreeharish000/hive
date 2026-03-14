@@ -8,13 +8,4 @@
         "PYTHONPATH": "../tools/src"
       }
     },
-    "tools": {
-      "command": "python",
-      "args": ["mcp_server.py", "--stdio"],
-      "cwd": "tools",
-      "env": {
-        "PYTHONPATH": "src"
-      }
-    }
-  }
-}
+    
