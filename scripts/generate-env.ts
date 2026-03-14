@@ -127,17 +127,6 @@ MONGODB_URL=${config.mongodb.url}
 MONGODB_DBNAME=${config.mongodb.database}
 MONGODB_ERP_DBNAME=${config.mongodb.erp_database}
 
-# Redis
-REDIS_URL=${config.redis.url}
-
-# Authentication
-JWT_SECRET=${config.auth.jwt_secret}
-PASSPHRASE=${config.auth.passphrase}
-
-# Features
-FEATURE_MCP_SERVER=${config.features.mcp_server}
-`;
-}
 
 function main() {
   console.log('Generating environment files from config.yaml...\n');
